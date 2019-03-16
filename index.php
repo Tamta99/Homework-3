@@ -8,29 +8,5 @@ $template->assign('Username', 'Tamta');
 $template->assign('sign', '!');
 
 $template->render('mytemplate');
-    
-    
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ?>
