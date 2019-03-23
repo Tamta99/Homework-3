@@ -1,5 +1,7 @@
 <?php
+
 class Template {
+    
     private $vars = array();
     public function assign($key, $value) {
         $this->vars[$key] = $value;
@@ -14,13 +16,10 @@ class Template {
             foreach ($this->vars as $key => $value) {
                 $contents = preg_replace('$' . $key . '$', $value,  $contents);
             }
-            
-            eval (' ?>' . $contents . '<?php ');
-        } else {
-            exit ('<h1> Template Error </h1>');
-        }
-        
+            echo $contents;
+        } 
     }
     
 }
+
 ?>
